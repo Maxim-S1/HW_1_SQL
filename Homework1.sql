@@ -27,4 +27,24 @@ WHERE product_count > 2;
 -- Задание 3
 
 SELECT * FROM mobile_phones
-WHERE manufactures = 'Samsung';   
+WHERE manufactures = 'Samsung';  
+
+-- Задание 4.1
+
+SELECT * FROM mobile_phones
+WHERE product_name REGEXP 'iPhone';
+
+-- Задание 4.2
+
+SELECT * FROM mobile_phones
+WHERE manufactures REGEXP 'Samsung';
+
+-- Задание 4.3
+
+SELECT * FROM mobile_phones
+WHERE product_name REGEXP '[0-9]';
+
+-- Задание 4.4
+
+SELECT * FROM mobile_phones
+WHERE product_name REGEXP '[8]';
